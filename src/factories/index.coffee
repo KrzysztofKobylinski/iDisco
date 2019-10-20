@@ -13,3 +13,7 @@ export Text = React.createFactory __Text
 
 import {Image as __Image} from 'react-native'
 export Image = React.createFactory __Image
+
+import {Linking} from 'react-native'
+export Link = Linking
+
