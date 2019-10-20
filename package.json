@@ -1,0 +1,22 @@
+{
+  "name": "idisco",
+  "main": "node_modules/expo/AppEntry.js",
+  "scripts": {
+    "start": "concurrently -n watch,expo -c gray,cyan \"npm run watch\" \"sleep 3 && npm run start:local\"",
+    "start:local": "expo start",
+    "build": "coffee -b -o app -c src",
+    "build:clean": "rm -rf app/ && npm run build",
+    "watch": "coffee -b -o app -wc src"
+  },
+  "dependencies": {
+    "concurrently": "^5.0.0",
+    "expo": "^35.0.0",
+    "react": "16.8.3",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-35.0.0.tar.gz"
+  },
+  "devDependencies": {
+    "coffeescript": "^2.3.2",
+    "schedule": "^0.4.0"
+  },
+  "private": true
+}
