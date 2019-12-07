@@ -7,7 +7,7 @@ import {
 	View, 
 	Style,
 	Link
-} from '../../factories'
+} from '../../../factories'
 
 styles = Style.create({
 	streamInfo: 
@@ -76,9 +76,9 @@ export default class StreamInfo extends React.Component
 					View {style: styles.section},
 						Text {style: styles.header}, 'Viewers'
 						Text {style: styles.text}, viewers
-			View {style: styles.section},
-				Text {style: styles.header}, 'Description'
-				Text {style: styles.text}, topic.text
+			# View {style: styles.section},
+			# 	Text {style: styles.header}, 'Description'
+			# 	Text {style: styles.text}, topic.text
 			View {style: styles.section},
 				Text {style: styles.header}, 'Last Update'
 				Text {style: styles.text}, 
