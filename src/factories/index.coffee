@@ -2,18 +2,19 @@ import React from 'react'
 
 export Fragment = React.createFactory React.Fragment
 
-import { StyleSheet } from 'react-native'
+import { 
+  StyleSheet 
+  Linking
+  View as __View
+  Easing as __Easing
+  Text as __Text
+  Button as __Button
+  Image as __Image
+  } from 'react-native'
 export Style = StyleSheet
-
-import {View as __View} from 'react-native'
-export View = React.createFactory __View
-
-import {Text as __Text} from 'react-native'
-export Text = React.createFactory __Text
-
-import {Image as __Image} from 'react-native'
-export Image = React.createFactory __Image
-
-import {Linking} from 'react-native'
 export Link = Linking
-
+export View = React.createFactory __View
+export Image = React.createFactory __Image
+export Text = React.createFactory __Text
+export Button = React.createFactory __Button
+export Easing = React.createFactory __Easing
